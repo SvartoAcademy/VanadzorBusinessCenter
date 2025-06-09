@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Վանաձորի Բիզնես Կենտրոն</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      padding: 1rem 2rem;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: #bbb;
+      margin-right: 1.5rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 15rem 1rem 3rem;
+      background: linear-gradient(135deg, #2a2a3f, #3f3f5a);
+      color: #fff;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      color: #1e1e2f;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #1e1e2f;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .section h3 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Վանաձորի Բիզնես Կենտրոն</h1>
+    <nav>
+      <a href="#about">Մեր մասին</a>
+      <a href="#services">Գործընկերներ</a>
+      <a href="#contact">Կապ</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <h2>Վարձով Գրասենյակային Տարածքներ</h2>
+    <p>Վանաձորի սրտում տրամադրում ենք հարմարավետ և ժամանակակից գրասենյակային տարածքներ բիզնեսների համար։</p>
+  </section>
+
+  <section class="section" id="services">
+    <h3>Մեր գործընկերները</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="qoworking.jpg" alt="Qo Coworking">
+        <h4>Qo Coworking</h4>
+        <p>Ժամանակակից համագործակցության տարածք ստեղծագործ և տեխնոլոգիական մարդկանց համար։</p>
+      </div>
+      <div class="card">
+        <img src="feelTheWorld.jpg" alt="SaviorHire">
+        <h4>FeelTheWorld</h4>
+        <p>Ճանաչիր աշխարհը մեզ հետ։</p>
+      </div>
+      <div class="card">
+        <img src="ucom.jpg" alt="Sportion">
+        <h4>Ucom</h4>
+        <p>Արի՛ UCOM</p>
+      </div>
+      <div class="card">
+        <img src="realConsulting.jpg" alt="Cinemart ՀԿ">
+        <h4>Real Consulting</h4>
+        <p>Կադաստրային դիմումների ընդունում,
+Գործարքների իրավական աջակցություն,
+Քաղաքաշինության ոլորտի թվային ծառայություններ, Անշարժ գույքի առուվաճառքի ծառայություններ</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Կապ</h3>
+    <p style="text-align: center; font-size: 1rem; color: #444;">Հասցե՝ Տիգրան Մեծ 18, Վանաձոր · Հեռախոս՝ +37494 574 747</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Սվարտո Ակադեմիա – Բոլոր իրավունքները պաշտպանված են։</p>
+  </footer>
+</body>
+</html>
